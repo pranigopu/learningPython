@@ -1,0 +1,9 @@
+NOTES ON SETS
+---*---*---
+Hashable and unhashable objects
+___
+A hashable object is an object whose hash value does not change during its lifetime. A hash value is a numeric value of a fixed length that uniquely identifies data. In general, mutable containers such as lists and dictionaries are not hashable.
+
+Hash values represent large amounts of data as much smaller numeric values, by mapping large range of values (all possible instances of an class or data type) and map them onto a smaller set of values (such as a 128 bit number).
+___
+A tuple, once initialised, is of a fixed length, which means it is possible to map every variation of a tuple into a numeric value of fixed length. However, a list is not of fixed length, and hence, it is not possible or practical to map every possible every possible variation of a list into a numeric value of a fixed length. Even a set is not of fixed length, since you can add new elements and remove existing elements from a set.
