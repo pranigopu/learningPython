@@ -1,0 +1,6 @@
+Extra notes for Python
+---*---*---
+1.
+Code quality in Python
+___
+Python is much more compact to write as it is more abstracted, and hence easier to debug and improve in quality.

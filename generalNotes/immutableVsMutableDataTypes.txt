@@ -1,0 +1,21 @@
+Immutable vs. mutable data types
+---*---*---
+The above can be of collection data types or of primitive data types.
+---*---*---
+Immutable data type is a data type that does not allow you to change an object's value once assigned, and does not allow you to allocate, reallocate or free the memory spaces of the object.
+___
+Examples...
+- String
+- Tuple
+---*---*---
+Mutable data type is a data type that allows you to change or operate on values of an assigned object of that type. It may also allow you to add or remove assigned spaces from an object, even after it has been assigned.
+
+In other words, mutable data types allow you to reassign values in the allocated memory spaces of the object, and it may allow you to allocate, reallocate and free memory spaces of the object.
+___
+Examples...
+- Integer
+- List --Can add or remove values, and allocate, reallocate or free memory spaces--
+- Array --Can change values, but not add or remove allocated spaces--
+- Set --Can allocate, reallocate or free memory spaces, but not reassign values--
+
+(Values cannot be reassigned in a set simply because it is not possible to index a set, since a set is unordered)
