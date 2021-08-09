@@ -1,0 +1,7 @@
+PIP
+---*---*---
+pip is a default standard package management system used to install and manage software packages written in Python.
+___
+It connects to an online repository of public packages, called the Python Package Index.
+___
+pip can also be configured to connect to other package repositories, provided that they comply to Python Enhancement Proposal 503.
