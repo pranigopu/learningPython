@@ -1,9 +1,0 @@
-Module
----*---*---
-In general, a module is a set of standardized parts or independent units that can be used to construct a more complex structure, such as an item of furniture or a building.
-___
-In programming, a module is a separate set of independent or interdependent objects, defintions and routines (i.e. sets of procedures grouped under a single callable name). One or more parts of a module can be included in a program.
-
-Modules enable us to
-- reuse code
-- classify code based on functionality
