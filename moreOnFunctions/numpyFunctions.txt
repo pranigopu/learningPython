@@ -1,0 +1,31 @@
+Numpy functions
+1. linspace
+2. meshgrid
+---*---*---
+NOTES
+___
+* before an argument means the argument is necessary and not optional.
+___
+In the function definitions, if parameter values are given, they are only the default values, and you may use any other valid value.
+---*---*---
+1.
+linspace(l, u, n)
+___
+This creates an array of values, starting from l and ending on u.
+___
+n is the number of evenly distributed values you want to include in the interval from l to u. For example, linspace(0, 1, 5) will result in the array
+[0, 0.25, 0.5, 0.75, 1]
+i.e. five evenly distributed values from 0 to 1 are taken.
+___
+Note that l and u are always included in the arrays.
+---*---*---
+2.
+meshgrid(* xi, copy = True, sparse = False, indexing = 'xy')
+___
+This function accepts two 1D arrays, the first representing a set of x-coordinates, the second representing a set of y coordinates. These two arrays must be of equal size.
+___
+It returns two 2D arrays respectively representing the x and y coordinates of each points derived from the given x and y coordinates (the 1st x-coordinate can be paired with the 1st y-coordinate to make a point, the 2nd x coordinate can be paired with the 2nd y-coordinate to make another point, and so on).
+___
+In the returned arrays, the points can be derived by matching the x and y coordinates having equal indices in their respective 2D arrays.
+___
+Essentially, you are giving a set of x values and y values, and getting a list of coordinates of all points derived from the given sets of x and y values. It is like giving the axes to get the grid.
