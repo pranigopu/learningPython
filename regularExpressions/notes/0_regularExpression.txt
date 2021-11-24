@@ -1,0 +1,7 @@
+REGULAR EXPRESSION (REGEX)
+---*---*---
+In computing, a regular expression is a sequence of characters expressing a pattern or string to be searched for within a longer piece of text.
+___
+In Python, we have versatile and powerful methods used to define, parse and validate regular expressions, available in the built-in package "re".
+___
+Some other languages that provide tools for RegEx are C++, C# and PHP.
