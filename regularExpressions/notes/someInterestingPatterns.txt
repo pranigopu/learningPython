@@ -1,0 +1,14 @@
+SOME INTERESTING PATTERNS
+---*---*---
+wordSplitPattern = r"[\.\,\"]*\s+[\.\,\"]*"
+___
+The word split pattern allows for any combination of period, comma and double quote before or after the whitespace.
+This ensures that these special symbols are removed from the word to which they are attached.
+This is not the same as r"\.+|\,+|\"+|\s+", as this one checks for a sequence of consecutive characters of the same type.
+---*---*---
+lineSplitPattern = r"\.\s+"
+___
+The line split pattern presupposes an identification of sentences wherein
+1. It has at least one period.
+2. It has at least one whitespace after the period.
+(Whitespace includes newline and end of file)

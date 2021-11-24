@@ -1,0 +1,9 @@
+NOTES ON BACKSLASH-PRECEDED CHARACTERS...
+___
+Characters such as quotes and double quotes (i.e. which have special meaning in Python) are represented in the string by preceding them with a backslash. This is to signify the character and not treat it as a special symbol. Other such characters are...
+. (dot)
+, (comma)
+" (double quote)
+\ (backslash)
+___
+When handled with RegEx functions, invisible or non-printable characters such as newline are represented as they are in Python ex. "\n". They are not translated into their on-screen equivalents (such as an actual newline on-screen).
