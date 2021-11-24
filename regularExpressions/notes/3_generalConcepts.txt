@@ -1,0 +1,107 @@
+GENERAL CONCEPTS IN REGEX
+1. Alternative |
+2. Grouping ()
+3. Quantification ?+*{m,n}
+4. Anchors ^$
+5. Meta-characters [][-][^]
+6. Character classes \w\d\s\W\D\S\\
+---*---*---
+1. Alternative
+___
+For defining an alternative regular expression.
+___
+"prani|pranav" => "prani" or "pranav"
+"grey|gray" => "grey" or "gray"
+---*---*---
+2. Grouping
+___
+For specifying a subset of the regular expression to be treated as a separate unit.
+___
+"ronal(do|dino)" => "ronaldo" or "ronaldino"
+"gr(e|a)y" => "grey" or "gray"
+"ra(my|n(ny|el))" => "ramy" or "ranny" or "ranel"
+---*---*---
+3. Quantification
+___
+For specifiying the consecutive occurrence of a character or a group of characters.
+___
+? => zero or one of the preceding element
+--x--
+"colou?r" => "color" or "colour"
+"Macbook(Pro)?" => "Macbook" or "MacbookPro"
+___
+* => zero to many of the preceding element
+--x--
+"goo*gle" => "gogle", "google", "gooogle", etc.
+"o(ha)*" => "o", "oha", "ohaha", etc.
+___
++ => one to many of the preceding element
+--x--
+"goo+gle" => "google", "gooogle", "goooogle", etc.
+"o(ha)+" => "oha", "ohaha", "ohahaha", etc.
+___
+{m,n} => m to n occurrences of the preceding element
+If m is not specified, occurrences can be from 0 to n.
+If n is not specified, occurrences can be from m to infinity.
+--x--
+"go{2,4}gle" => "google", "gooogle" or "goooogle"
+"o(ha){1,3}" => "oha", "ohaha" or "ohahaha"
+"o(lala){,2}" => "o", "olala" or "olalala"
+"u(wa){2,}" => "uwawa", "uwawawa", "uwawawawa", etc.
+---*---*---
+4. Anchors
+___
+For specifying the position where the regular expression must be found.
+___
+^ => matches the starting position of the string to the regex
+--x--
+"^pre" => starts with "pre" ex. "prefrontal" or "prenuptial"
+___
+$ => matches the ending position of the string to the regex
+--x--
+"tex$" => ends with "tex" ex. "vortex" or "latex"
+---*---*---
+5. Meta-characters
+___
+For representing any one out of multiple possible characters.
+___
+. => placeholder for any character
+--x--
+"pro." => "pros", "pro1", "prox", etc.
+"1.3" => "123", "143", "1x3", etc.
+___
+[] => matches any one character within the brackets
+--x--
+"[aeiou]" => any vowel
+"[0123456789]" => any digit
+"[abc]" =? "a","b" or "c"
+___
+[-] => matches any one character in the range defined in the brackets
+--x--
+"[a-z]" => any lowercase alphabet
+"[a-zA-Z]" => any alphabet, lowercase or uppercase
+"[0-9]" => any digit
+"[a-c]" =? "a","b" or "c"
+--x--
+NOTE
+"[a-z]+" means any combination of alphabets. Similarly, "[abc]+" means any combination of a, b and c. This makes sense because the square brackets imply any one, and the plus implies multiple, meaning multiple of any one (not constant).
+___
+[^] => matches any character not in the brackets / the range defined in the brackets
+--x--
+"[^aeiou]" => any non-vowel
+"[^0-9]" => any non-digit
+"[^abc]" => any character except "a", "b" and "c"
+---*---*---
+6. Character classes
+___
+\d => class of digits i.e. [0-9]
+\D => class of non-digits i.e. [^0-9]
+\s => class of whitespace characters i.e. [ \n\f\r\t\v]
+\S => class of non-whitespace characters i.e. [^ \n\f\r\t\v]
+\w => class of alphanumeric characters and underscore i.e. [a-zA-Z0-9_]
+\W => class of non-alphanumeric characters and underscore i.e. [^a-zA-Z0-9_]
+\\ => backslash i.e. \
+___
+Hence, we see that the capital form of a class denotation is that class' negative. Also note that each of the above represents only one out of the respective group of characters, as indicated by the regular expression.
+___
+To look for a character that has special meaning in a RegEx ex. '.', '[' etc., use a backslash before the character, ex. \., \[, etc.

@@ -1,0 +1,2 @@
+tmp = re.finditer(pattern, " " + string + " ")
+# Returns a list of Match objects for every match in the string.

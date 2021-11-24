@@ -1,0 +1,7 @@
+GENERAL USES OF REGULAR EXPRESSION (REGEX)
+---*---*---
+The below functionalities are found in the built-in Python library "re".
+- Search a string (search and match)
+- Replace parts of a string (sub)
+- Break a string into smaller pieces (split)
+- Finding a string (findall)

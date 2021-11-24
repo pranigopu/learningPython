@@ -1,0 +1,8 @@
+FEATURES OF REGULAR EXPRESSION
+---*---*---
+- Multiple lines of code could be reduced to a single line regular expression
+- Used to construct compilers, interpreters and text editors
+- Used to search and match text patters
+- Used to validate text data formats, especially input text
+- Popular programming languages have RegEx capabilities
+  ex. Python, JavaScript, C++, C#
