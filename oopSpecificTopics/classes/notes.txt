@@ -1,0 +1,14 @@
+Python class notes
+---*---*---
+__init__ function
+___
+The __init__ function is the constructor of the class it is placed in. It is used to instantiate the class.
+___
+To call it, we simply use the class name as the function name and pass the specified arguments of the __init__ function for that class. 
+---*---*---
+self
+___
+Within the class definition, self refers to an object of that class. It is the first argument in any nethod defined for the class, due to the follwing reasons...
+- The methods in the class cannot refer to each other unattached to the class' object.
+- The methods in the class cannot be called unattached the class' object.
+- When you call a method as an object's attribute, you implicitly pass the object as well.
