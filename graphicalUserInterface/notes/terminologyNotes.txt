@@ -1,0 +1,5 @@
+TERMINOLOGY NOTES
+---*---*---
+Parent = Root
+___
+A parent or root of a widget B is the widget A that contains B.

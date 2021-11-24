@@ -1,0 +1,15 @@
+STATE OPTION NOTES
+---*---*---
+Every widget other than an Entry widget that allows input has an option called "state".
+___
+This option has three possible values...
+--x--
+"normal" => widget can be modified by keystrokes, and is responsive to mouse-click actions.
+--x--
+"readonly" => widget cannot be modified by keystrokes, but is responsive to mouse-click actions (other than paste). It only allows pre-defined inputs.
+--x--
+"disabled" => widget is unresponsive to keystrokes and mouse-click actions.
+___
+By default, such a widget has this option's value set to "normal".
+---*---*---
+Note that in the case of text boxes, putting state as disabled prevents you from applying the insert method to add new text. Also, for text boxes, there is no "readonly" state.

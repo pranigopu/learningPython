@@ -1,0 +1,7 @@
+TEXTVARIABLE NOTES
+---*---*---
+Any widget that can take user input has the option "textvariable".
+___
+This option can contain a Tk variable (not an ordinary one... check my notes on Tk variable classes) whose value reflects on screen.
+--x--
+Using the set method available for Tk variables, you can set values for such variables.

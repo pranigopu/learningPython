@@ -1,0 +1,70 @@
+Tkinter allows interaction between Python and the operating system, through programmable window-based interfaces. Tkinter is a combination of Tcl and Tk.
+---*---*---
+Tcl (tool command language)
+___
+TCL is a tool command language (invented in 1990)used for web and desktop applications, networking, system administration, scripted applications, embedded systems, rapid prototyping and software testing.
+
+Tcl allows extension packages, which provide additional functionality such as GUI, terminal-based application automation and database access. Two extension packages are TK and Expect.
+---*---*---
+Tk (toolkit)
+___
+Tk is an open-source and cross-platform widget toolkit for building GUI.
+
+Other cross-platform widget toolkits are...
+- Java  and Java Swing (used for Open Office)
+- QT (used for Google Earth, Skype, Linux KDE windows)
+- GTK+ (used for Linux Gnome windows)
+- Cocoa (used for Mac OS)
+- Silverlight (used for modern MS Windows NT)
+---*---*---
+Tkinter (toolkit interface)
+___
+Tkinter = Tcl + Tk
+___
+Tk is a GUI toolkit provided as a library of routines written in C. This library manages and manipulates the windows and handles the GUI events and user interactions.
+___
+Tkinter is the Python interface for Tk. A Python module that provides a collection of Python classes and methods for accessing the Tk toolkit through Python.
+___
+Tcl is the mostly hidden (abstracted upon) languages used by Tk and is hence used by Tkinter to communicate with the Tk toolkit.
+---*---*---
+Widget
+___
+A user interface element (text box, combo box or top-level window). In the context of Windows OS, widgets are commonly known as control or window.
+___
+In Tkinter, the Widget class has the following subclasses...
+- Frame
+- Label
+- Entry
+- Text
+- Button
+- Checkbutton
+- Radiobutton
+- Menu
+- Canvas
+- Scale
+- Listbox
+- Scrollbar
+- Menubutton
+---*---*---
+Python GUI programming pros and cons
+___
+ADVANTAGES
+--x--
+1.
+Brevity:
+Due to both the power of Python and Tk, programs in Python using Tkinter can be very brief. Reasonable default values are defined for many options used in creating and packing (i.e. placing and displaying) a widget.
+--x--
+2.
+Cross-platform:
+Tk provides widgets on Windows, Mac and most Unix implementations, with very little platform-specific dependence.
+___
+DISADVANTAGES
+--x--
+1.
+Speed:
+Most calls to Tkinter are formatted as a Tcl command (a string) and interpreted by Tcl through the actual Tk function calls.
+
+The slowdown caused by successive execution of two interpreted languages is rarely present in practice, and most real-world applications spend very little time communicating between various levels of Python, Tcl and Tk.
+--x--
+Other scripting languages within Python:
+Tcl is a language other than Python used in GUI tasks for Python.

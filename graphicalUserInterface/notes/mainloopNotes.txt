@@ -1,0 +1,15 @@
+MAINLOOP
+---*---*---
+Syntax
+___
+mainloop()
+or
+window.mainloop()
+or
+tkinter.mainloop()
+---*---*---
+Function
+___
+Used when your application is ready to run. mainloop() is an infinite loop used to run the application, wait for an event to occur and process the event as long as the window is not closed.
+___
+mainloop() can be attached to an object, in order to create an application using the object's attributes and methods.

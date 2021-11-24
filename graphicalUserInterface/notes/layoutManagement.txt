@@ -1,0 +1,119 @@
+LAYOUT MANAGEMENT
+========================
+The widgets are only placed on screen when their location within a given layout is specified.
+___
+There are three primary layout managers in tkinter, namely Grid, Pack and Place. You must use either one in a program, since all are significantly different and not compatible with each other.
+========================
+GRID
+---*---*---
+The grid manager places widgets in a simple two dimensional grid layout, with each position defined by a column number and a row number.
+---*---*---
+The grid location by itself is not an absolute point on the container widget or window, although the coordinates of each widget within this grid are absolute. It is relative to the other widgets.
+___
+In other words, the grid is created dynamically as more widgets are added, and it is not the absolute size of the column and row values, but their ranks with respect to other widgets that determines where the respective widget is placed. Hence, we also have that the relative positions of the widgets are determinate, once defined.
+---*---*---
+OPTIONS
+___
+column option
+--x--
+Defines the column number where the widget must be placed.
+___
+row option:
+--x--
+Defines the row number where the widgets must be placed.
+___
+sticky option:
+--x--
+(Similar to anchor in pack manager)
+Defines the alignment of the widget within its defined cell in the grid.
+"w" => west => left of the cell (left alignment) (default)
+"e" => east => right of the cell (right alignment)
+"n" => north => top of the cell
+"s" => north => bottom of the cell
+___
+You can also have combined alignment, such as "ne", "sw" etc.
+____
+Each of these alignment options (anchors) have corresponding constant identifiers defined for them in the module tkinter.constants.
+(W, E, N, S, NE, SW, etc.)
+___
+NOTE:
+If you don't give column and row values, these values will default to the last row in column 0.
+========================
+PACK
+---*---*---
+Similar to the grid manager, the pack manager places (or "packs") widgets into relative positions.
+---*---*---
+However, unlike the grid manager, you cannot refer to particular cells using row and column numbers, especially since here is no defined grid for this manager.
+___
+Another key difference is that pack manager can align widgets relative to the container widget or window, whereas grid manager can only align widgets relative to their cell.
+___
+Also, when widgets are packed using the code, the order in which they appear on screen is the order their pack method is executed in the code. This is unlike the grid manager, where you can specify the relative position of widgets in a determinate manner, regardless of which widget is placed in the layout first.
+___
+Compared to the grid manager, the pack manager is somewhat limited, but it offers different functionalities, and it’s much easier to use in a few, but quite common situations, such as...
+- Putting a widget inside a frame (or any other container widget), and have it fill the entire frame
+- Placing a number of widgets on top of each other
+- Placing a number of widgets side by side
+___
+Using this layout manager, you can also place the widgets in positions relative to the container widget or window using the side options, using the anchor option. You can also expand and fill empty spaces with widgets in a proportional manner. This makes it much easier to align and proportionally position widgets.
+---*---*---
+OPTIONS
+___
+Anchor option
+--x--
+"w" => west => left of the container (widget or window) (left alignment)
+"e" => east => right of the container (widget or window) (right alignment)
+"n" => north => top of the container (widget or window)
+"s" => north => bottom of the container (widget or window)
+--x--
+You can also have combined anchors, such as "ne", "sw" etc.
+--x--
+Each of these anchors have corresponding constant identifiers defined for them in the module tkinter.constants.
+(W, E, N, S, NE, SW, etc.)
+___
+expand option
+--x--
+When set to true, widget expands to fill any space not otherwise used in widget's parent (which can be a container widget or a window).
+___
+fill option
+--x--
+Determines whether widget fills any extra space allocated to it by the packer, or keeps its own minimal dimensions.
+--x--
+The options are:
+- NONE ("none") (default)
+- X ("x") (fill only horizontally)
+- Y ("y") (fill only vertically)
+- BOTH ("both") (fill both horizontally and vertically).
+___
+side option
+--x--
+Determines which side of the parent (container widget or window) the widget packs against. If the previously packed widget is packed against that direction, th current widget packs against that widget.
+- TOP ("top") (default)
+- BOTTOM ("bottom")
+- LEFT ("left")
+- RIGHT ("right")
+___
+NOTE:
+All the constant identifiers (in capital letters) are available in the module tkinter.constants.
+---*---*---
+NOTE:
+If you give no arguments to the pack function, the widget will be placed with the default values, meaning it will simply be placed below the last widget.
+========================
+PLACE
+---*---*---
+Using this manager, you can place a widget at an exact point in the containter widget or window.
+---*---*---
+The coordinates are given in pixel units from the top left corner of the containter widget or window. So, the top-left-most pixel is x = 0, y = 0.
+---*---*---
+Given this arrangement, it is clear that the coordinates are always positive. Going right increases the x coordinate's value, going down increases the y coordinate's value.
+---*---*---
+The coordinates of a widget here are not relative to anything within its container widget or window, and are fixed, absolute points within the contained space.
+---*---*---
+OPTIONS
+___
+x option
+--x--
+The x coordinate where you want to place your widget.
+___
+y option
+--x--
+The y coordinate where you want to place your widget.

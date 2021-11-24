@@ -1,0 +1,33 @@
+TKINTER.TTK
+___
+The tkinter.ttk module provides access to the Tk themed widget set i.e. widgets derived from the Tk class, but themed differently.
+___
+The basic idea for tkinter.ttk is to separate (to the extent possible) the code implementing a widget’s behavior from the code implementing its appearance. The tkinter module has code implementing widget behaviour, while tkinter.ttk also focusses on the appearance, and adds new widgets using the defined widgets in tkinter.
+___
+To start using Ttk, import its module in one of the following ways...
+- import tkinter.ttk (here, you refer to all Ttk elements using tkinter.ttk.etc.)
+- import tkinter.ttk as someName (here, you refer to all Ttk elements using someName.etc.)
+- from tkinter import ttk (here, you refer to all Ttk elements using ttk.etc.)
+- from tkinter.ttk import *
+
+Note that when you do from tkinter import *, you must refer to Ttk elements using ttk.etc.
+___
+To override the basic Tk widgets, the Ttk import should follow the Tk import as follows..
+from tkinter import *
+from tkinter.ttk import *
+--x--
+This code causes several tkinter.ttk widgets such as
+- Button
+- Checkbutton
+- Entry
+- Frame
+- Label
+- LabelFrame
+- Menubutton
+- PanedWindow
+- Radiobutton
+- Scale
+- Scrollbar
+to automatically replace the Tk widgets.
+--x--
+This has the direct benefit of using the new widgets which gives a better look and feel across platforms. However, the replacement widgets are not completely compatible. The main difference is that widget options such as “fg”, “bg” and others related to widget styling are no longer present in Ttk widgets. Instead, use the ttk.Style class for improved styling effects.
