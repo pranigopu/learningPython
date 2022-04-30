@@ -1,0 +1,21 @@
+IEX Cloud API batch calls (batch HTTP requests)
+---*---*---
+For official IEX Cloud information: https://iexcloud.io/docs/api/#batch-requests
+---*---*---
+The endpoint URL (see note on IEX Cloud API calls) remains unchanged until the name of the database, in our case 'stock'. To query multiple symbols from this database, add "/market/batch?" After the question mark, you must add the query string.
+---*---*---
+Creating the query string
+___
+The query string has 3 possible parameters:
+1.
+types (comma delimited list of endpoints to call from)
+2.
+symbols (comma delimited list of symbols on which to get response data)
+3.
+range (check the official documentation, we will not discuss or use it here)
+___
+Out of these, only 'types' required, and the rest are optional (since an API call is incomplete without defined endpoints). To add another parameter when one is already given, use '&'. You must also add '&' before giving the token (instead of the usual '?'). Also, note that the comma delimited list is given in a format such as the following...
+
+parameter=element1,element2,element3
+
+Don't give spaces, and note that 'parameter' and 'element1', 'element2' etc. are placeholders and must be replaced with valid values.

@@ -1,0 +1,17 @@
+Notes on functions
+---*---*---
+1.
+Assigning identifiers to function names
+___
+Let's say there is a function defined under the name "fun"...
+def fun(a, b):
+	return a + b
+(It may be any kind of function, this is just an example.
+___
+We may assign the function name to another identifier...
+bore = fun
+___
+Now, bore identifies a function with the same definition as fun. Hence, we can call
+bore(1, 2)
+which will now give the same result as
+fun(1, 2)

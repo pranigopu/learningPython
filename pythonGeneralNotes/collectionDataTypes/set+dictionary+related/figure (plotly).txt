@@ -1,0 +1,5 @@
+Figure object in Plotly
+---*---*---
+The plotly Python package exists to create, manipulate and render graphical figures (i.e. charts, plots, maps and diagrams) represented by data structures also referred to as figures.
+
+Figures can be represented in Python either as dictionaries or as instances of the plotly.graph_objects.Figure class. If represented as dictionaries, they must either be processed by the show function in the module plotly.io to be rendered as a Figure object, or be passed to the Figure class constructor.

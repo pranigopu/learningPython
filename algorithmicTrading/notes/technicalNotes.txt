@@ -1,0 +1,46 @@
+TECHNICAL (I. E. COMPUTER OR ALGORITHMIC) DEFINITIONS AND NOTES
+========================
+Application programming interface (API) and API tokens
+---*---*---
+API
+___
+A programmable and configurable interface designed for enabling communication between applications (i.e. an interface for applications to directly communicate through with each other). In other terms, an API is a set of functions and procedures that allow one application to access the feature of other application
+---*---*---
+API tokens
+___
+A token can mean one of the following...
+___
+1.
+A unique identifier of an application requesting access to a service. The service would generate an API token for the application to use when requesting the service. The service provider can then match the token provided by the application to the one stored with the service provider in order to authenticate.
+___
+2.
+A replacement for sending some username and password combination over HTTP, which is not secure. While someone could still take and use the API token instead, it is more secure.
+========================
+Authorisation vs. authentication
+---*---*---
+Authentication is the process of verifying the identity of an entity (user, device, server, etc.), whereas authorisation is the process of verifying what specific applications, files, and data an entity has access to.
+========================
+f string in Python
+---*---*---
+This is essentially a string with variable parts i.e. containing values from variables. For example, suppose in the following string:
+myString = "Hello, my name is XYZ"
+you want to be able to replace XYZ with any name assigned beforehand to a variable 'myName':
+myName = "Gopinath"
+___
+Then, you can create an f string with the required section being the variable part, as follows:
+myString = f"Hello, my name is {myName}"
+___
+Now, whatever value you give to 'myName" will be reflected in myString.
+---*---*---
+IMPORTANT NOTE:
+The value of 'myName' or any placeholder variable you used must be given before you make the f string. Changing the variable after the f string has been assigned has no effect on the f string's value.
+========================
+JSON (JavaScript Object Notation) file format
+---*---*---
+JSON is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays. It is a common data format with diverse uses in electronic data interchange, including that of web applications with servers.
+___
+JSON is a lightweight, text-based, language-independent data interchange format. It was derived from the JavaScript programming language, but it is itself programming language independent, i.e. it supports almost any programming language and communication framework.
+========================
+API sandbox
+---*---*---
+An API sandbox is an environment that testers can use to imitate the characteristics of the production environment and create simulated responses from all API's the application relies on.

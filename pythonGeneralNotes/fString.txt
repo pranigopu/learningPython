@@ -1,0 +1,14 @@
+f string in Python
+---*---*---
+This is essentially a string with variable parts i.e. containing values from variables. For example, suppose in the following string:
+myString = "Hello, my name is XYZ"
+you want to be able to replace XYZ with any name assigned beforehand to a variable 'myName':
+myName = "Gopinath"
+___
+Then, you can create an f string with the required section being the variable part, as follows:
+myString = f"Hello, my name is {myName}"
+___
+Now, whatever value you give to 'myName" will be reflected in myString.
+---*---*---
+IMPORTANT NOTE:
+The value of 'myName' or any placeholder variable you used must be given before you make the f string. Changing the variable after the f string has been assigned has no effect on the f string's value.

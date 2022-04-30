@@ -1,0 +1,25 @@
+NOTES ON WEB FRAMEWORK
+---*---*---
+Model => Describes your data
+View => Controls what user sees
+Template => What user sees
+Controller => URL dispatcher
+---*---*---
+ACCESSING MODEL ATTRIBUTES
+___
+If you have a model M with attributes a, b and c, then to access attribute a, simply do M.a
+---*---*---
+ACCESSING PARTICULAR MODEL RECORDS BASED ON VALUES IN CERTAIN ATTRIBUTES
+___
+You can access your model's field using the get method. Say you have a model M with fields a, b and c. Then, since M is a subclass of django.models.Model, we have an available subclass instance 'objects' and an available method defined for this subclass 'get'. To access the record having a particular value of a, M.objects.get(a = particularValue). If such a record does not exist, the returned value is  of type 'None'.
+---*---*---
+CSRF TOKEN
+(CSRF => Cross Site Request Forgery)
+___
+A CSRF Token is a secret, unique and unpredictable value a server-side application generates in order to protect vulnerable resources. 
+
+The tokens are generated and submitted by the server-side application in an HTTP request made by the client, and this token is assigned to the client's session (a certain memory space allocated for some amount of time to hold data exchanged between the client and the server). In some ways, it acts as an API token, except that it applies for a session and not a user (unlike API token).
+
+After the request is made, the server side application compares the two tokens found in the user session and in the request. If the token is missing or does not match the value within the user session, the request is rejected, the user's session terminated and the event logged as a potential CSRF attack.
+
+Just like session tokens in general, CSRF tokens should contain significant entropy and be strongly unpredictable.

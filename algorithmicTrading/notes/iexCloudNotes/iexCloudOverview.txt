@@ -1,0 +1,55 @@
+IEX Cloud notes
+========================
+Official comprehensive documentation:
+https://iexcloud.io/docs
+========================
+INTRODUCTION
+---*---*---
+IEX Cloud is a platform that makes financial data and services accessible to everyone. To interact with this platform through applications and programs, we use the IEX Cloud API.
+___
+The IEX Cloud API
+- is based on REST
+- has resource oriented URLs (URLs point directly to resources)
+- returns JSON-encoded responses
+- returns standard HTTP response codes
+========================
+Base URL
+---*---*---
+Base URL here is the main part of the link any the API (in the IEX Cloud platform) through which we will be accessing services through API calls. IEX Cloud is a platform containing multiple versions of its API, including the stable and latest versions. For our purpose, we will be working on the stable version. Note that by themselves, the links are not valid, and must be succeeded by the version and endpoint locators.
+---*---*---
+The base url for the platform is:
+https://cloud.iexapis.com/
+___
+Versions are added to the base url (to get the base URL for specific API versions), such as
+- https://cloud.iexapis.com/stable
+- https://cloud.iexapis.com/v1
+- https://cloud.iexapis.com/beta
+--x--
+'v1' can be used to access the current API version.
+'stable' can be used to access the latest stable API version.
+'beta' can be used to access the latest API version.
+========================
+API tokens
+---*---*---
+Information from:
+https://iexcloud.io/docs/api/#authentication
+___
+IEX Cloud authenticates your API requests using your account's API tokens. To use any IEX Cloud API, you must pass an API token with each request. If you do not include your API token when making an API request, or use one that is incorrect or disabled, IEX Cloud returns an error.
+---*---*---
+Types of API tokens
+___
+IEX Cloud provides two types of API tokens i.e. publishable and secret.
+___
+Publishable API tokens are meant solely to identify your account with IEX Cloud, they aren’t secret. They can be published in places like your website JavaScript code, or in an iPhone or Android app.
+--x--
+Secret API tokens should be kept confidential and only stored on your own servers. Your account’s secret API token can perform any API request to IEX Cloud.
+---*---*---
+Some useful links
+___
+Error codes: https://iexcloud.io/docs/api/#errorcodes
+___
+How to make REST API calls: https://iexcloud.io/docs/api/#rest-how-to
+___
+To get your API token: https://iexcloud.io/console/tokens
+--x--
+You must sign in or register your IEX Cloud account first. Then, you will receive two tokens, one publishable, one secret.

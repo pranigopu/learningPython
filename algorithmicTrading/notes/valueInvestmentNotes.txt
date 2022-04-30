@@ -1,0 +1,20 @@
+Value investment definition
+---*---*---
+Value investment means investing in stocks (i.e. company shares) that are cheap relative to their value (which is evaluated using measures of business value such as earnings and assets).
+___
+In other words, value investment is the investment on the stocks that are priced lower than their intrinsic value (i.e. the company is underselling its stocks).
+---*---*---
+Multiples
+___
+Algorithmic value investment relies on the concept of multiples. Multiples are values calculated by dividing a company's stock price to some measure of the company's business value, such as earnings or assets.
+___
+Some common multiples used are:
+- Price-to-earnings
+- Price-to-book-value
+- Price-to-free-cash-flow
+--x--
+Price means stock price, and all the measures here are annual estimates (annual estimate of earnings etc.).
+___
+Minimsing disadvantes of different types of multiples --composite--
+--x--
+Each type of multiple has its advantages and disadvantages. One way to minimise the disadvantages of a multiple is to use a composite, which is an everage of multiple different valuation strategies.

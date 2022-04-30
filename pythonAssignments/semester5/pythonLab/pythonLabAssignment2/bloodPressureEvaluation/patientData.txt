@@ -1,0 +1,15 @@
+NAME, SYSTOLIC, DIASTOLIC
+John Smith, 190, 78
+Hellion Jones, 143, 90
+George Orill Svenson, 156, 40
+Toothe Gappe, 142, 95
+Restin Peece, 170, 50
+Raisin Johnny, 183, 67
+Cellar Tommy, 127, 54
+Fundam Ental, 100, 30
+Saint Saens, 140, 40
+Dar Fader, 130, 60
+Acacia Logge, 126, 94
+Spineless Cur, 167, 56
+Rakata Pataka, 115, 56
+Czerny Zinc, 163, 77

@@ -1,0 +1,7 @@
+Resource oriented architecture
+---*---*---
+A resource-oriented architecture i.e. ROA is a structural design supporting the internetworking of resources. A resource here is any entity that can be identified and assigned a uniform resource identifier (URI).
+___
+In information technology, architecture refers to the overall structure of an information system and the interrelationships of entities that make up that system. ROA is considered a REST-based architecture (i.e. RESTful architecture).
+___
+Within the ROA concept, resources include not only IT infrastructure elements such as servers, computers and other devices, but also Web pages, scripts and possibly other interconnected entities such as traffic lights.

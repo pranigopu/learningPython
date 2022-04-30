@@ -1,0 +1,23 @@
+API tokens
+========================
+Information from:
+https://iexcloud.io/docs/api/#authentication
+___
+IEX Cloud authenticates your API requests using your account's API tokens. To use any IEX Cloud API, you must pass an API token with each request. If you do not include your API token when making an API request, or use one that is incorrect or disabled, IEX Cloud returns an error.
+========================
+Types of API tokens
+---*---*---
+IEX Cloud provides two types of API tokens i.e. publishable and secret.
+___
+Publishable API tokens are meant solely to identify your account with IEX Cloud, they aren’t secret. They can be published in places like your website JavaScript code, or in an iPhone or Android app.
+___
+Secret API tokens should be kept confidential and only stored on your own servers. Your account’s secret API token can perform any API request to IEX Cloud.
+========================
+How to get your API tokens
+---*---*---
+Note that IEX Cloud provides all users with one free public token and one free secret token for each environment (production and testing sandbox). To get a token from IEX Cloud, you must register an account.
+___
+API tokens can then be accessed from the console page:
+(https://iexcloud.io/console/).
+--x--
+To get to sandbox token, toggle the "Sandbox View" option visible in console page.

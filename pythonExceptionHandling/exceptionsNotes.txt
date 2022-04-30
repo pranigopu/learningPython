@@ -1,0 +1,14 @@
+Exceptions
+---*---*---
+An exception is an error or another extraordinary case that happens during a program's execution, and must be handled differently if at all.
+
+If an exception is not caught, the program is terminated. In Python, exceptions are triggered automatically on errors, and they can be triggered and intercepted by your code.
+---*--*---
+COMMON EXCEPTIONS
+___
+IOError
+ValueError
+SyntaxError
+TypeError
+NameError
+ZeroDivisionError

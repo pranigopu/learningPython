@@ -1,0 +1,60 @@
+Pandas dataframe notes
+---*---*---
+A dataframe made using Pandas will be an object of the DataFrame class available in this library.
+---*---*---
+APPENDING DATA
+___
+The Pandas .append() function (defined for DataFrame objects) is used to append rows of other dataframe to the end of the given dataframe, returning a new dataframe object. Columns not in the original dataframes are added as new columns (similar to a dictionary and its keys) and the new cells are populated with 'NaN' value.
+--x--
+Note that .append() does not reassign the database (unlike a list's .append() function).
+___
+USAGE 1 (NO DICTIONARY USED)
+--x--
+The .append(collection) appends to all the collection to the 1st field, below the present data (this collection can also be another Pandas DataFrame object).
+
+However, the indices start from 0 for the first item in the collection (i.e. they will not continue increasing from the available indices). For example...
+# Say you have created a dataframe 'df'
+df = df.append([0, 0, 0])
+--
+df is now:
+Index	C1	C2	C3
+0	0	NaN	NaN
+1	0	NaN	NaN
+2	0	NaN	NaN
+--
+df = df.append([1, 1])
+--
+df is now:
+Index	C1	C2	C3
+0	0	NaN	NaN
+1	0	NaN	NaN
+2	0	NaN	NaN
+0	1	NaN	NaN
+1	1	NaN	NaN
+___
+USAGE 2 (NO DICTIONARY USED)
+--x--
+To avoid the problem of repeating indices, use the option 'ignore_index', and set it as True. This may be done as follows...
+# Say you have created a dataframe 'df'
+df = df.append([0, 0, 0])
+--
+df is now:
+Index	C1	C2	C3
+0	0	NaN	NaN
+1	0	NaN	NaN
+2	0	NaN	NaN
+--
+df = df.append([1, 1], ignore_index = True)
+--
+df is now:
+Index	C1	C2	C3
+0	0	NaN	NaN
+1	0	NaN	NaN
+2	0	NaN	NaN
+3	1	NaN	NaN
+4	1	NaN	NaN
+___
+USAGE 2 (DICTIONARY USED)
+--x--
+Using a dictionary enables you to append a whole row. Note that you can only append a dictionary as a row if you put ignore_index = True.
+---*---*---

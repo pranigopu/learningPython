@@ -1,0 +1,24 @@
+Some keywords in python
+---*---*---
+"in"
+___
+The 'in' operator is used to check if a value exists in a sequence or not. Evaluates to true if it finds a variable in the specified sequence and false otherwise.
+___
+Ex.
+Code...
+myList = [1, 2, 3, 4]
+print(9 in myList)
+
+Output...
+False
+---*---*---
+"not"
+___
+Returns the inverse of a boolean value.
+___
+Ex.
+Code...
+print(not (1 > 2))
+
+Output...
+True

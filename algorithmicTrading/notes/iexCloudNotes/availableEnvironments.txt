@@ -1,0 +1,39 @@
+Production & sandbox environments--with API tokens & base URL's--
+========================
+To access a legitimate, production-level data and services using the IEX Cloud API, there are monthly limitations. However, IEX Cloud provides all accounts a free, unlimited use sandbox for testing.
+___
+The method of performing API calls does not change between production and testing environments. The only differences are in the API tokens and the base URL's.
+___
+Note that you get different tokens for production and test environments, and you must use them accordingly so that the API can authenticate your device for the particular environment's services.
+---*---*---
+Production environment
+========================
+This is the regular API environment for production-level data and services. It is free upto a monthly imposed limit (renews every month). The public token starts with 'pk_'.
+---*---*---
+Base and API URL's
+___
+Base URL:
+https://cloud.iexapis.com
+--x--
+API URL (for stable version):
+https://cloud.iexapis.com/stable/
+========================
+Sandbox environment
+---*---*---
+This is testing environment (free and unlimited in IEX Cloud) that imitates the production environment in terms of implementation methods and overall process, but does not provide production-level data.
+___
+(From: https://iexcloud.io/docs/api/#testing-sandbox) Note that sandbox response data is purposefully manipulated to scramble values and is not suitable for production usage. Data returned in the sandbox will look real, but strings are scrambled, dates are manipulated, and numbers are changed.
+---*---*---
+Base and API URL's
+___
+Base URL:
+https://sandbox.iexapis.com
+--x--
+API URL (for stable version):
+https://sandbox.iexapis.com/stable/
+========================
+Request limits
+---*---*---
+For more information: https://iexcloud.io/docs/api/#request-limits
+___
+(From the website) IEX Cloud only applies request limits per IP address to ensure system stability. We limit requests to 100 per second per IP measured in milliseconds, so no more than 1 request per 10 milliseconds. We do allow bursts, but this should be sufficient for almost all use cases. Note that Sandbox Testing has a request limit of 10 requests per second measured in milliseconds.

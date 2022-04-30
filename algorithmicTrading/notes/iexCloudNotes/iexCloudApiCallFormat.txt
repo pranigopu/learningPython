@@ -1,0 +1,17 @@
+API call format (IEX Cloud)
+---*---*---
+{API URL}/{}/{Data source}/{Symbol(s)}/{Endpoint name} (no authorisation given)
+___
+(Note that the curly brackets imply placeholders, and are not meant to be used)
+___
+A symbol refers to a particular object on which data exists (the object may be presented as a row or a set of rows in a table). It refers to the particular entity the service must operate on or retrieve data on.
+___
+The whole URL is the link to the desired endpoint (i.e. connection to the desired server or service). However, we are still missing the authorisation, which is done by providing you API token as follows.
+____
+{API URL}/{Data source}/{Argument(s)}/{Endpoint name}/?token={API token}
+---*---*---
+Example
+___
+https://sandbox.iexapis.com/stable/stock/AAPL/quote?token=Tpk_75e5db7f508e48f2b7dff4f435ff8029
+___
+Here, 'stock' refers to the data source, 'AAPL' is the symbol and 'quote' is the endpoint to a particular server or service.

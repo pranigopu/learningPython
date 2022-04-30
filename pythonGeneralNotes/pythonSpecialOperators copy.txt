@@ -1,0 +1,5 @@
+Some important functions in Python
+---*---*---
+join
+___
+The join method joins all elements of a given collection using a given separator character, and returns the combined string. It is like the antithesis of the split function.

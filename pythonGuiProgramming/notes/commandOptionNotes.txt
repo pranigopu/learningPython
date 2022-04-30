@@ -1,0 +1,9 @@
+COMMAND OPTION NOTES
+---*---*---
+Many widgets offer a command option, where you can give a function name to be run whenever some trigger event happens (such as mouse-click, for buttons).
+___
+However, for a proper trigger functionality, remember to only give the function name. This is because while no error will be thrown if you include brackets (as in a function call) and maybe add arguments (if the function so demands), the function will be run without any trigger event when the program's execution reaches that line.
+---*---*---
+ORDER OF DEFINITIONS
+___
+Note that the command option's function can be defined anywhere before the widgets that invoke it. The command function can also use widgets that defined after the function. For example, if you have an entry widget, and a button widget to print the entered input, the function for the command option of this button can be defined before either of the two widgets. Also, the order in which the widgets are defined relative to each other does not matter. However, if a function is defined after the button widget that invokes it, the function cannot be called, since its identifier cannot be resolved by the Python interpreter.

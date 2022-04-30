@@ -1,0 +1,7 @@
+Reading from a file
+---*---*---
+read function
+___
+The read function has two possible functions:
+1. Read and return n number of bytes (1 character is 1 byte).
+2. Read and return everything from the file as one string.

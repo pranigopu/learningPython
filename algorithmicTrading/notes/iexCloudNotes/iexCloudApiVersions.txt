@@ -1,0 +1,19 @@
+API versions
+---*---*---
+Within the IEX Cloud platform, multiple versions of its API are available for use. To make API calls, you need to specify the version. To specify the version, you need not know the exact name, instead you may simply refer to the latest stable version or latest (beta) version as "stable" or "latest" in the URL.
+---*---*---
+EXAMPLE
+___
+For example, say we are using the base url for the IEX Cloud platform:
+https://cloud.iexapis.com/
+--x--
+(For the purpose of this example, I am using the production environment base URL, not the testing sandbox base URL)
+___
+Versions are added to the base url (to get the base URL for specific API versions), such as
+- https://cloud.iexapis.com/stable
+- https://cloud.iexapis.com/v1
+- https://cloud.iexapis.com/beta
+--x--
+'v1' is a specific API version (version 1).
+'stable' can be used to access the latest stable API version.
+'beta' can be used to access the latest API version.

@@ -1,0 +1,28 @@
+Immutable vs. mutable data types
+---*---*---
+The above can be of collection data types or of primitive data types.
+___
+Also note that items are unified collections of one or more values.
+---*---*---
+For an object of immutable data type, you cannot reassign an object's item (or items, in the case of collections) once initialised. You may reassign the object's identifier, but then the original object is lost.
+
+You also cannot allocate new memory spaces to the object or free old memory spaces of the object once assigned without deleting the object entirely.
+--
+In terms of its physical implementation, an object refers to a set of allocated memory spaces that contain or have access to one or more defined attributes, and where items placed in those spaces may have certain defined properties.
+--
+___
+Examples...
+- String
+- Tuple
+---*---*---
+For an object of mutable data type, you can reassign an object's item (or items, in the case of collections) even after it is initialised. Reassignment here does not refer to the reassignment of the identifier (which would cause the original object to be lost) but of the items within the object.
+
+In other words, mutable data types allow you to reassign values in the allocated memory spaces of the object, and it may allow you to allocate, reallocate and free memory spaces of the object.
+___
+Examples...
+- Integer
+- List --Can add or remove values, and allocate, reallocate or free memory spaces--
+- Array --Can change values, but not add or remove allocated spaces--
+- Set --Can allocate, reallocate or free memory spaces, but not reassign values--
+
+(Values cannot be reassigned in a set simply because it is not possible to index a set, since a set is unordered)

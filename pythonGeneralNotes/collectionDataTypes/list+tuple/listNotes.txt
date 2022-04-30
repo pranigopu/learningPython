@@ -1,0 +1,93 @@
+List
+1. General characteristics
+2. Making a list
+3. Accessing a list element
+	3.1. Index
+	3.2. Negative index
+4. Functions related to lists
+x. Other notes
+---*---*---
+1. General characteristics
+___
+A mutable, indexed data structure that allows
+- Duplicates
+- Heterogenous data types
+---*---*---
+2. Making a list
+___
+myList = [element1, element2, element3... ]
+myList = list()	# Empty list
+myList = []	# Empty list
+ex.
+myList = ["apple", "orange", "beetroot"]
+myList = [1, 2.3, True, "pi", "phi", 2.3]
+___
+A list element can also be a list, but that whole list would be just one element.
+---*---*---
+3. Accessing a list element
+___
+3.1. Index
+--x--
+To access list element, refer to index as follows...
+list[index]
+# Indices start at 0
+ex.
+myList = [1, 2.3, True, "pi", "phi", 2.3]
+myList[3]		# "pi" will be accessed
+item = myList[0]	# item = 1
+--x--
+If index is too large, we get the error
+IndexError: list index out of range
+___
+3.2. Negative index
+--x--
+Putting index -1 accesses the last element of the list, putting index -2 accesses the second last element of the list, and so on...
+ex.
+myList = [1, 2.3, True, "pi", "phi", 2.3]'
+myList[-1]		# 2.3 will be accessed
+item = myList[-4]	# item = True
+--x--
+If index is too small, we get the error
+IndexError: list index out of range
+---*---*---
+4. Functions related to lists
+___
+The format of the listing below is
+function name,
+max arguments,
+mandatory arguments,
+key function usage examples
+... description
+___
+sort, 0, NA, myList.sort()
+... sorts a list by ascending alphabetic and numeric order
+reverse, 0, NA, myList.reverse()
+... reverse the order of the list's elements
+remove, 1, value, myList.remove(value)
+... removes the given value and its space from the list
+del, 1, listElement, del(myList[listElement])
+... removes the given list element from that list
+list, 1, object, list(object)
+... returns a new list object by converting object as a list object
+count, 1, value, myList.count(value)
+... returns the frequency of the value in the list
+---*---*---
+x. Other notes
+___
+1
+--x--
+If you add a string to a list like
+list += string
+then each character of the string will be added into the list as a separate elment.
+___
+2
+--x--
+You can concatentate i.e. merge to lists by using the addition operator "+", like
+list1 + list2
+___
+3
+--x--
+You can create a list using a for loop directly using the following syntax:
+[x for x in abc]
+If abc is a collection of objects with some attributes, and you want to access the values in the attribute, say 'w', then we can do:
+[x.w for x in abc]

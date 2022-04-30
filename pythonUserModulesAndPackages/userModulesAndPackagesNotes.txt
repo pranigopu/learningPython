@@ -1,0 +1,58 @@
+USER MODULES AND PACKAGES NOTES
+---*---*---
+THE "__init__.py" FILE
+___
+The "__init__.py" file, when placed in a directory, enables the directory to be utilised as a package. It must always have the same name "__init__.py". It may remain empty, or may contain initialising statements for the package whenever it is called by a program.
+___
+The initialisation code in this file usually consists of import directives, which can make it easier for the main program to access the various elements of the modules.
+___
+RELATIVE IMPORTS
+--x--
+Relative import specifices the resource relative to the current location.
+--x--
+In this case, the resource is a module relative to the location of the program importing the package.
+--x--
+This is important for the initialising code, because this code will be run by the main program, which may be located anywhere with respect to the particular module in the package. Of course, the package is imported using absolute import. Using this full address as referrence, the relative imports are made.
+--x--
+Relative imports cannot be used with "import .a" form. Use "from . import a" instead.
+___
+OTHER KEY POINTS
+--x--
+In the "__init__.py" file, you must precede every module name with a '.'.
+The import functions in this file ensure that the module elements are more easily accessible to the program importing the whole package.
+In this case, I have imported them such that they will be accessible through the package name as though the package were a module with these elements.
+---*---*---
+ALTERNATE WAYS TO IMPORT A MODULE
+___
+import demoModule - Refer to module elements with prefix "demoModule."
+from demoModule import... - Import specific elements. No prefix needed for referring to them.
+from demoModule import * - Import all elements. No prefix needed for referring to them.
+---*---*---
+IMPORTING PACKAGES
+___
+The modules in the package must be handled based on the "__init__.py" file's contents.
+___
+For "demoMathPackage", the "__init__.py" had the following imports
+from .basicMath import *
+from .recursiveMath import *
+
+In this case, the module elements are available through the package name as though the package were the module.
+___
+For "demoGreetingsPackage", the "__init__.py" had the following imports
+from .informalGreetings import *
+from .formalGreetings import formalGreet1
+
+In this case, the elements of the module "informalGreetings" is available through the package name  as though the package were the module.
+
+The module "archaicGreetings" is not included here, hence to access its elements in the main program, we must specifically import it as
+import demoGreetingsPackage.archaicGreetings
+# Or use any other variation of the import directive
+
+However, since the module "formalGreetings" is included, but not all of its functions are
+- "formalGreet1" is available through the package name as though the package were the module.
+- Other functions can be referred by
+    - Specifically importing "formalGreetings" as
+      import demoGreetingsPackage.formalGreetings
+      # Or use any other variation of the import directive
+    - Simply referring to "formalGreetings" using "demoGreetingsPackage" as a prefix
+      ex. demoGreetingsPackage.formalGreetings.formalGreet2("Mr.", "Lava")

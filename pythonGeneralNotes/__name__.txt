@@ -1,0 +1,5 @@
+__name__
+---*---*---
+Before executing code, Python interpreter reads source file and defines few special variables/global variables. If the python interpreter is running a module (i.e. interpreting the source file) as the main program, it sets the special __name__ variable to have a value "__main__". If this file is being imported from another module, __name__ will be set to the module’s name. Module’s name is available as value to __name__ global variable.
+
+This is useful when you want to keep function calls within the module for testing purposes, but do not want them exectuted when the module is being imported by another program.

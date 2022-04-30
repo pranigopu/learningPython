@@ -1,0 +1,48 @@
+Module
+---*---*---
+In general, a module is a set of standardized parts or independent units that can be used to construct a more complex structure, such as an item of furniture or a building.
+___
+In programming, a module is a separate set of independent or interdependent objects, defintions and routines (i.e. sets of procedures grouped under a single callable name). One or more parts of a module can be included in a program.
+
+Modules enable us to
+- reuse code
+- classify code based on functionality
+========================
+SOME NOTABLE MODULES
+1. plotly
+2. numpy
+3. pandas
+------------------------
+1. plotly
+___
+The plotly Python package exists to create, manipulate and render graphical figures (i.e. charts, plots, maps and diagrams) represented by data structures also referred to as figures.
+
+Figures can be represented in Python either as dicts or as instances of the plotly.graph_objects.Figure class.
+------------------------
+2. numpy
+___
+NumPy is an open source Python package used for scientific computing, started by Travis Oliphant in 2005.
+
+It provides fast and efficient array computing, since although it is a Python library, its underlying functionality is written in C, which is a much faster language than Python.
+
+It offers various mathematical functions, including random number generators, linear algebra routines and Fourier transforms.
+
+It is based on optimised code written in C.
+
+It provides Python's flexibility as well as the speed of compiled code. Its instructions follow a high level syntax, making it easy to grasp and use.
+-----------------------
+3. pandas
+___
+pandas is a fast, versatile, flexible and easy to use open source data analysis and manipulation tool, built using Python, started by Wes McKinney in 2008.
+___
+It includes features such as
+- A fast and efficient DataFrame object for data manipulation with integrated indexing.
+- Tools for reading and writing data between different formats
+  (such as CSV, text files, Microsoft Excel and SQL databases)
+- Intelligent data alignment and integrated handling of missing data.
+- Flexible reshaping and pivoting of data sets.
+- Intelligent label based slicing, fancy indexing, and subsetting of large data sets.
+- Columns can be inserted and deleted from data structures for size mutability.
+- High performance merging and joining of data sets.
+- Time series functionality.
+- Highly optimized for performance.

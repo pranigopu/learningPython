@@ -1,0 +1,46 @@
+FINANCIAL AND STOCK MARKET DEFINITIONS AND NOTES
+========================
+Stock vs. share
+---*---*---
+Generally, these terms are used interchangeably. Each refers to the ownership of some portion of entreprises. Stock is a more general term used to refer to ownership of some portion of any number of entreprises, while share is a more specific term used to refer to the ownership of some portion of a particular entreprise.
+___
+Hence, we have the stock market (less commonly the share market), but not stocks of a company, rather shares of a company. We may also use stocks to refer to all the shares of a company.
+========================
+Value investment definition
+---*---*---
+Value investment means investing in stocks (i.e. company shares) that are cheap relative to their value (which is evaluated using measures of business value such as earnings and assets).
+========================
+Securities of a company (in a financial market)
+---*---*---
+Securities are fungible (i.e. mutually interchangeable i.e. they may apply to any form of productive value in the company) and tradable financial instruments used to raise capital in public and private markets. There are primarily three types of securities:
+1. Equity (provides ownership rights to holders)
+2. Debt (essentially loans repaid with periodic payments)
+3. Hybrids (combine aspects of debt and equity)
+========================
+Stock market exchange
+---*---*---
+A location (physical or virtual) where shares of publicly listed companies are traded. A stock exchange enables stockbrokers to trade company stocks and other securities. A stock may be bought or sold only if it is listed on a stock exchange. Thus, it is the meeting place of the stock buyers and sellers.
+========================
+Stock market index --featuring S&P 500--
+---*---*---
+Stock market indices are measures that give an insight into the trends of the capital markets and the attitude of investors towards a particular stock or set of stocks in an industry. Hence, a stock market index acts like a barometer which shows the overall conditions of the market.
+---*---*---
+In other terms, stock market index is a statistical measure (i.e. a value derived from the various measures of a company and other companies in the exchange, intended to convey information about the value of its stocks)
+---*---*---
+S&P 500
+___
+The Standard and Poor's 500, or simply the S&P 500, is a stock market index tracking the performance of 500 large companies listed on stock exchanges in the United States.
+========================
+Market capitalisation --and outstanding shares--
+---*---*---
+The total market value of a publicly traded company's outstanding shares. Market capitalisation is product of the share price and the number of outstanding shares.
+---*---*---
+Outstanding shares
+___
+Shares outstanding are all the shares of a corporation that have been authorized, issued and purchased by investors and are held by them. They are distinguished from treasury shares, which are shares held by the corporation itself.
+========================
+Stock symbol / ticker symbol
+---*---*---
+A stock symbol or ticker symbol is an abbreviation used to uniquely identify publicly traded shares of a particular stock (i.e. a particular entreprise's shares) on a particular stock market.
+___
+For example, 'AAPL' uniquely identifies Apple stock.

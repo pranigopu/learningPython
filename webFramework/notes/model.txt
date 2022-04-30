@@ -1,0 +1,75 @@
+Model
+---*---*---
+Model is the definition of the structure and properties with which some subset of your data can be stored. It is implemented using a user-defined sub-class of a broader model class.
+
+Comparing it to a database implementation, a model is like a table, and the model's objects i.e. instances are the rows of the table. Each attribute of the model represents a field of the table.
+
+Comparing it to an entity relationship system, a model is like an entity, and the model's objects i.e. instances are the instances of this entity. Each attribute of the model represents an attribute of the entity.
+========================
+MODELS IN DJANGO
+---*---*---
+In Django, models are user-defined subclasses of the class django.db.models.Model. Note that each data type has a corresponding field class in the "models" module, and you must assign attributes to objects of these classes.
+---*---*---
+BASIC SYNTAX AND DATA TYPES
+___
+from django.db import models
+
+# Using different data types in this example...
+
+class ModelName(models.Model):
+	attribute1 = models.CharField()
+	attribute2 = models.IntegerField()
+	attribute3 = models.DateField()
+	# More can be added, and attribute names can be decided by you...
+	#------------
+	# More options...
+	attribute4 = models.CharField(max_length = 30)
+	
+	options1 = (a1, a2, a3 ...) # Don't put the dots in the actual code!
+	attribute5 = models.CharField(max_length = 10, choices = options1)
+	
+	options1 = (b1, b2, b3 ...) # Don't put the dots in the actual code!
+	attribute5 = models.CharField(max_length = 10, choices = options1, blank = True)
+	# blank = True means the default state is blank.
+---*---*---
+MORE OPTIONS FOR THE FIELDS
+___
+default
+--x--
+The default value for the field. This can be a value or a callable object. If callable it will be called every time a new object is created.
+___
+help_text
+--x--
+Extra text to be displayed with the form widget, for commenting or information purposes. It’s useful for documentation even if your field isn’t used on a form.
+___
+primary_key
+--x--
+If True, this field is the primary key for the model.
+
+If you don’t specify primary_key = True for any fields in your model, Django will automatically add an extra 'IntegerField' object to hold the primary key, so you don’t need to set any of your fields as a primary key, unless you want to override the default primary key behavior.
+___
+unique
+--x--
+If True, this field must be unique throughout the table.
+___
+foreign_key
+--x--
+Discussed in the next section.
+---*---*---
+FOREIGN KEY FUNCTIONALITY (INTER-MODEL REFERENCING)
+___
+You can even assign attributes as foreign keys on other models (which makes sense if you think of models as analogous to tables, and model attributes as analogous to table fields). They options i.e. arguments available for the foreign key class constructor are similar to the options you have in SQL.
+
+from django.db import models
+
+class Musician(models.Model):
+	first_name = models.CharField(max_length = 50)
+	last_name = models.CharField(max_length = 50)
+	instrument = models.CharField(max_length = 100)
+
+class Album(models.Model):
+	# 'artist' refers to a certain row in the 'Musicial' model...
+	artist = models.ForeignKey(Musician, on_delete = models.CASCADE)
+	name = models.CharField(max_length = 100)
+	release_date = models.DateField()
+	num_stars = models.IntegerField()

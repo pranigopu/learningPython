@@ -1,0 +1,9 @@
+Base URL
+---*---*---
+Base URL is the main part of the link any the API (in the IEX Cloud platform or the IEX Cloud testing sandbox platform) through which we will be accessing services through API calls. IEX Cloud is a platform containing multiple versions of its API, including the stable and latest versions.
+___
+For our purposes, we will be mostly working on the stable version.
+___
+Note that by themselves, the URL's are not valid, and must be succeeded by the version and endpoint locators (even the URL with the version is not very meaningful by itself).
+---*---*---
+To get more specific information about base URL's, check the notes on available environments in IEX Cloud.

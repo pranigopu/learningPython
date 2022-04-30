@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Product details</title>
+        <style>
+            body
+            {
+                padding: 10px;
+            }
+            table
+            {
+                width: 100%;
+                background-color: lavenderblush;
+            }
+            thead
+            {
+                background-color: black;
+                color: white;
+            }
+            th, td
+            {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+         <h1>Product details</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+<!-- Credit: https://www.geeksforgeeks.org/rendering-data-frame-to-html-template-in-table-view-using-django-framework/ -->
+                {% if data %}  
+                {% for i in data %}
+                <tr>
+                    <td>{{i.pid}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.description}}</td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </tbody>
+        </table>
+    </body>
+</html>

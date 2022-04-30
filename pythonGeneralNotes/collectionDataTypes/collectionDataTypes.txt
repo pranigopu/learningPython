@@ -1,0 +1,18 @@
+Collection data types
+---*---*---
+DEFINITION
+___
+A collection data type is a complex data type that is composed of one or more elements of other data types. A collection data type should be divisible into smaller data components, without changing any individual element.
+___
+An integer object is composed of a single element of integer data type, hence is not a collection data type.
+___
+A collection data type may be ordered (i.e. elements are present in a defined and constant order) or unordered.
+---*---*---
+IDENTIFIER OF A COLLECTION DATA TYPE
+___
+The identifier of a collection data type is in fact a pointer to the location of the first element in the collection.
+___
+Hence, even if do any of the following
+- you pass a collection's name as an argument to a function
+- assign the collection's name's value to another identifier
+... in both cases, any changes you make in the other identifier (function argument or duplicate) will reflect in the original collection itself, since each identifier points to the same memory address.

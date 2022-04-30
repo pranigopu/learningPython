@@ -1,0 +1,13 @@
+API endpoint
+---*---*---
+An API endpoint is the point of entry (of requests to the server and data from the server) in a communication channel through which two applications are interacting. It refers to the communication connections between an API and a server or service.
+___
+In other words, it is the endpoint i.e. destination of a client's request that is made through the API. An enpoint is the final link from the client to the server or service.
+___
+An API can have multiple endpoints, if there are multiple servers, services or resources that can be accessed through the API. Each endpoint links to a single server, service or resource. Note that a single server, service or resource can offer multiple functions and operations.
+___
+An API endpoint is represented by a URL of a server or service.
+========================
+In practice...
+---*---*---
+The client requests are usually HTTP requests, made using URLs to identify the destination of their requests. An endpoint is the API's link to a certain server or service.

@@ -1,0 +1,5 @@
+CANVAS VS FRAME
+---*---*---
+A Canvas widget (from the module tkinter.ttk) is used for drawing shapes and plots. A Frame widget is for organising tkinter widgets within itself.
+___
+Canvas can be thought of as an extension of Frame. Canvas allows you to organise widgets in it, but Frame does not allow you to draw shapes and plots within it.

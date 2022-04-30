@@ -1,0 +1,13 @@
+Special functions in Python
+---*---*---
+The format of the listing below is
+function name,
+max arguments,
+mandatory arguments,
+key function usage examples
+... description
+---*---*---
+dir, 1, object, dir(x)
+... gives the list of all applicable functions for the object x.
+isinstance, 2, (object, data type), isinstance(23, int)
+...checks if object is of given data type

@@ -1,0 +1,16 @@
+API calls
+---*---*---
+API calls access specific operations (from the service application being accessed through the API) that your client applications can invoke at runtime to perform tasks. Such tasks may be (among others)
+- querying a database
+- adding, updating or deleting data
+- getting certain data information (metadata)
+---*---*---
+On the surface, an API call is similar to a function call. Each API call has a defined purpose (since it is destined for a specific server or service).
+---*---*---
+Different API's have different methods for making API calls.
+---*---*---
+In practice...
+___
+Each API call accesses a certain server or service at a time. API calls contain a link to the API itself, appended with the locator of the specific endpoint required for the call.
+___
+An API call is usually in the form of an HTTP request. In Python, we have the "request" library, which contains method through which we can make different API calls, given the endpoint.

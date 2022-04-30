@@ -1,0 +1,3 @@
+API sandbox
+---*---*---
+An API sandbox is an environment that testers can use to imitate the characteristics of the production environment and create simulated responses from all API's the application relies on.

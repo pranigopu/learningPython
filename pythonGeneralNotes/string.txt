@@ -1,0 +1,35 @@
+String
+1. String constructor
+2. Strings and lists
+3. Useful functions
+---*---*---
+1.
+String constructor
+___
+To initialise a string, we can simply do something like
+myString = "xyz"
+
+Alternatively, we can use the class constructor for strings, str(), like
+myString = str("xyz")
+Giving no argument in the function returns an emty string.
+---*---*---
+2.
+Strings and lists
+___
+If you add a string to a list like
+list += string
+then each character of the string will be added into the list as a separate elment.
+---*---*---
+3.
+Useful functions
+___
+The split method splits a string into a list.
+___
+The syntax is
+myString.split(separator, maxsplit)
+--x--
+You can specify the separator, but the default separator is whitespace. The maxsplit option specifies the maximum number of separations that should be made for that string, hence the maximum number of items in the list minus one.
+___
+The join method joins the elements of an iterable object using a given string. For example,
+myString.join(iterable)
+joins each element of the iterable collection using myString. Note that each element of the iterable collection must be a string too!

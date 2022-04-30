@@ -1,0 +1,5 @@
+Yield keyword in Python
+---*---*---
+'yield' is a keyword in Python that is used to return from a function without destroying the states of its local variables. When the function is called, the execution starts from the last executed yield statement.
+___
+Any function that contains a yield keyword is termed a generator. Hence, yield is what makes a generator.

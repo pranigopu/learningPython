@@ -1,0 +1,26 @@
+WIDGETS
+---*---*---
+The widgets are only placed on screen when their location within a given layout is specified.
+___
+There are three primary layout managers in tkinter, namely Grid, Pack and Place.
+========================
+NATURE OF WIDGET OBJECTS
+---*---*---
+Apparently, every widget object is a dictionary-like structure. The keys are the attribute names, and each key i.e. attribute name is attached to a value.
+___
+This is why we cannot access the attributes of a widget object using __getAttribute__, since its attributes are bundled in a dictionary-like structure.
+========================
+ACCESSING AND CHANGING ATTRIBUTES...
+---*---*---
+To access the attribute values of a widget, we can either do...
+widgetObject["attributeName"]
+or
+widgetObject.cget("attributeName")
+___
+You can change these accessed attributes for the object as...
+widgetObject["attributeName"] = newValues (just as you would in a dictionary)
+or
+widgetObject.configure(attributeName = newValues)
+___
+NOTE:
+config and configure have the same functionality.

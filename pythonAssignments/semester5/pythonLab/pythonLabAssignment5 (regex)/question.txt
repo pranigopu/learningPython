@@ -1,0 +1,43 @@
+Generate two or more random paragraphs using the given online website...
+https://randomwordgenerator.com/paragraph.php
+... and perform the following tasks on it.
+------------
+Question 1.
+Find the total number of paragraphs and total number of lines and words in each paragraph.
+___
+Question 2.
+Find all the words that begin with vowel in the first paragraph & those which begin with consonants in the second paragraph.
+___
+Question 3.
+Find all the words having numerals.
+___
+Question 4.
+Find all the words which begin with letter 'data/Data/DATA'. If no such words exist then add such related words and repeat the search.
+___
+Question 5.
+Find all the words which end with letter 'e'.
+___
+Question 6.
+Find all the words that begins with an vowel and ends with an vowel OR that begins with a consonant and ends with a consonant.
+___
+Question 7.
+Find all the words that have the letters 'to' in them, find the position of 'to' in each word.
+___
+Question 8.
+Find all the words that have capital letters in them.
+___
+Question 9.
+Find all the words that have special symbols in them.
+___
+Question 10.
+Find the first occurrence of full stop in your input.
+___
+Question 11.
+Find the words that don’t have any vowel in them. If no such words exist add a few related words and repeat the task.
+___
+Question 12.
+Find the first occurrent of a word that does not begin with consonant but ends with 'ing' and has 'ta' in it.
+___
+NOTE:
+Before starting the execution the paragraph should be appended with the following sentence...
+"This random entertaining paragraph was generated using https://randomwordgenerator.com/paragraph.php for 1940000 [your regno]”.

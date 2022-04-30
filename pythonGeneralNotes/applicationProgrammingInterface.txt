@@ -1,0 +1,3 @@
+Application programming interface
+---*---*---
+A programmable and configurable interface designed for enabling communication between applications (i.e. an interface for applications to directly communicate through with each other). In other terms, an API is a set of functions and procedures that allow one application to access the feature of other application

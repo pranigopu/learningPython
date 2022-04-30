@@ -1,0 +1,147 @@
+TKINTER.TK
+---*---*---
+Syntax
+___
+Tk(screenName=None,  baseName=None,  className='Tk',  useTk=1)
+---*---*---
+Function
+___
+Creates an object for the main windows. Returns a new Toplevel widget on the screen screenName. All arguments are optional.
+___
+They are termed as "top-level" widgets because they are not children of any other objects. Closing a top-level window won't stop the program (application) unless the top-level window is the root (has no parents). There can be multiple top-level windows created in a single program (or application), either at the start, or dynamically, but there can be only one root.
+
+Note that if the root window is closed, all top-level windows close, since the root window has final control over the program's execution.
+=====================
+TKINTER.TTK
+---*---*---
+The tkinter.ttk module provides access to the Tk themed widget set i.e. widgets derived from the Tk class, but themed differently.
+---*---*---
+The basic idea for tkinter.ttk is to separate (to the extent possible) the code implementing a widget’s behavior from the code implementing its appearance. The tkinter module has code implementing widget behaviour, while tkinter.ttk also focusses on the appearance, and adds new widgets using the defined widgets in tkinter.
+---*---*---
+To start using Ttk, import its module in one of the following ways...
+- import tkinter.ttk (here, you refer to all Ttk elements using tkinter.ttk.etc.)
+- import tkinter.ttk as someName (here, you refer to all Ttk elements using someName.etc.)
+- from tkinter import ttk (here, you refer to all Ttk elements using ttk.etc.)
+- from tkinter.ttk import *
+
+Note that when you do from tkinter import *, you must refer to Ttk elements using ttk.etc.
+---*---*---
+To override the basic Tk widgets, the Ttk import should follow the Tk import as follows..
+from tkinter import *
+from tkinter.ttk import *
+___
+This code causes several tkinter.ttk widgets such as
+- Button
+- Checkbutton
+- Entry
+- Frame
+- Label
+- LabelFrame
+- Menubutton
+- PanedWindow
+- Radiobutton
+- Scale
+- Scrollbar
+to automatically replace the Tk widgets.
+___
+This has the direct benefit of using the new widgets which gives a better look and feel across platforms. However, the replacement widgets are not completely compatible. The main difference is that widget options such as “fg”, “bg” and others related to widget styling are no longer present in Ttk widgets. Instead, use the ttk.Style class for improved styling effects.
+=====================
+MAINLOOP
+---*---*---
+Syntax
+___
+mainloop()
+or
+window.mainloop()
+or
+tkinter.mainloop()
+---*---*---
+Function
+___
+Used when your application is ready to run. mainloop() is an infinite loop used to run the application, wait for an event to occur and process the event as long as the window is not closed.
+___
+mainloop() can be attached to an object, in order to create an application using the object's attributes and methods.
+=====================
+PACK
+---*---*---
+Similar to the grid manager, the pack manager places (or "packs") widgets into rows and columns.
+---*---*---
+However, unlike the grid manager, you cannot refer to particular cells using row and column numbers.
+___
+Another key difference is that pack manager can align widgets relative to the container widget or window, whereas grid manager can only align widgets relative to their cell.
+___
+Also, when widgets are packed using the code, the order in which they appear on screen is the order their pack method is executed in the code. This is unlike the grid manager, where you can specify the relative position of widgets in a determinate manner, regardless of which widget is placed in the layout first.
+___
+Compared to the grid manager, the pack manager is somewhat limited, but it offers different functionalities, and it’s much easier to use in a few, but quite common situations, such as...
+(1)
+Putting a widget inside a frame (or any other container widget), and have it fill the entire frame
+--x--
+(2)
+Placing a number of widgets on top of each other
+--x--
+(3)
+Placing a number of widgets side by side
+___
+Using this layout manager, you can also place the widgets in positions relative to the container widget or window using the side options, using the anchor option. You can also expand and fill empty spaces with widgets in a proportional manner. This makes it much easier to align and proportionally position widgets.
+---*---*---
+Other options for organising widgets are place and grid.
+___
+Place allows you to arrange widgets by exact coordinates that are absolute within the window.
+___
+Grid creates a two-dimensional grid within whose cells widgets can be placed (using column and row numbers).
+=====================
+SPINBOX VS COMBOBOX
+---*---*---
+SPINBOX
+___
+Syntax
+--x--
+Spinbox(parent, from_, to, width, wrap, command, etc.)
+NOTE: All arguments are optional.
+--x--
+'from_' is used because 'from' is already a keyword in Python. 'wrap' ensures that if you reach a bound value and click further in the same direction, the value will go to the opposite bound.
+___
+Function
+--x--
+The Spinbox widget is an alternative to the Entry widget or even the Combobox widget. It provides a range of values to the user, out of which the user can select any one value. The user may also input directly, as in an Entry widget or Combobox.
+
+However, while a Combobox has a drop-down list, a Spinbox makes you to cycle through the values using up and down arrows placed at the side of the input box. Also, it is much easier to create numerical ranges for Spinbox widgets.
+
+Another difference from Entry widgets and Combobox widgets is that a Spinbox widget can trigger commands (functions / methods) like a button. The trigger is done using the up/down arrow buttons on the side of the Spinbox widget.
+___
+Floating point value range example
+--x--
+s1 = tkinter.Spinbox(w, from_ = 1, to = 10, width = 10, wrap = True)
+s1.grid(column = 0, row = 0)
+___
+Discrete value range example
+--x--
+Here, you can have any set of values that you want to give as options in the spin box. This allows selection of discrete values of any kind.
+--x--
+x = ("Hey", 2.3, 2, "Bye", 3.14, "I am Boar")
+s2 = tkinter.Spinbox(w, values = x, width = 10, wrap = True)
+s2.grid(column = 0, row = 1)
+---*---*---
+COMBOBOX
+___
+Note that Combobox is found in the tkinter.ttk module, and is a widget made using Entry and List widgets.
+___
+Syntax
+--x--
+Combobox(parent, values, etc.)
+NOTE: All arguments are optional.
+___
+Function
+--x--
+Combobox is a combination of Listbox and an entry field. It contains a down arrow to select from a list of options. It helps the users to select according to the list of options displayed.
+___
+Example
+--x--
+c = ttk.Combobox(w)
+c.configure(values = ("General Kenobi", "Master Skywalker", "Admiral Tarkin", "Chancellor Palpatine"))
+========================
+CANVAS VS FRAME
+___
+A Canvas widget is used for drawing shapes and plots. A Frame widget is for organising tkinter widgets within itself.
+___
+Canvas can be thought of as an extension of Frame. Canvas allows you to organise widgets in it, but Frame does not allow you to draw shapes and plots within it.

@@ -1,5 +1,0 @@
-COMMAND OPTION NOTES
----*---*---
-Many widgets offer a command option, where you can give a function name to be run whenever some trigger event happens (such as mouse-click, for buttons).
-___
-However, for a proper trigger functionality, remember to only give the function name. This is because while no error will be thrown if you include brackets (as in a function call) and maybe add arguments (if the function so demands), the function will be run without any trigger event when the program's execution reaches that line.

@@ -1,0 +1,32 @@
+ARGUMENT UNPACKING
+---*---*---
+Sometimes, you may want to pass multiple arguments present in a list, but may not want to spell out each element of the list. Or sometimes, you may have the keyword name stored as a string and may not be able to spell out the keyword for the argument. In these cases, unpacking the argument from a list, dictionary or any collection is very useful.
+============
+Non-keyword arguments
+---*---*---
+A non-keyword argument is a function argument that is passed to a variable within the function based on the order in which it is passed. Hence, we can have function calls like...
+func(arg1, arg2, arg3) # Three arguments passed to function 'func'
+___
+The same can be done as follows...
+func(*[arg1, arg2, arg3])
+or
+myList = [arg1, arg2, arg3]
+func(*myList)
+This is more useful when you have an automatically created list of arguments to pass.
+============
+Keyword arguments
+---*---*---
+A keyword argument is a function argument that is passed using a keyword that is a variable used within the function, and whose value is passed during function calls as follows...
+func(xyz = value)
+where 'value' is the variable representing the value passed, and 'xyz' is the actual name of the variable to be assigned within the function. Note that 'xyz' is the identifier name alone, not an identifier for another object.
+___
+The advantage of keyword arguments is that the order of the arguments in the function call is not important, since the keyword serves to identify the destination of the passed value.
+---*---*---
+UNPACKING KEYWORD ARGUMENTS USING DICTIONARIES
+___
+An alternate way to represent
+func(xyz = value)
+is...
+func(**{'xyz': value})
+___
+Here, 'xyz' is the key of the dictionary, and is given as a string containing the keyword name, with the passed value given as the value for this key. The double asterisks preceding the dictionary's brackets specify that the dictionary must be unpacked into keyword arguments (you may give multiple keyword and value pairs).

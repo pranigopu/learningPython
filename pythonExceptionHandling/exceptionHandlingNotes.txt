@@ -1,0 +1,30 @@
+KEYWORDS
+1. raise --similar to 'throw' in Java--
+2. try-except
+3. else
+4. finally
+---*---*---
+1. raise
+___
+The raise statement allows the programmer to force a specified exception to occur. For example...
+raise NameError('HiThere')
+--x--
+Output
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: HiThere
+___
+The sole argument to raise indicates the exception to be raised. This must be either an exception instance or an exception class (a class that derives from Exception). If an exception class is passed, it will be implicitly instantiated by calling its constructor with no arguments:
+raise ValueError  # shorthand for 'raise ValueError()'
+---*---*---
+2. try-except
+___
+"try" contains the code to be excecuted where an exception may be found. "except" contains the code to be excecuted upon intercepting an exception (a particular exception, multiple specified exceptions, or any exception).
+---*---*---
+3. else
+___
+"else" is chained at the end of a try-except chain, and contains the code to be excecuted only if no exception has been caught.
+---*---*---
+4. finally
+___
+"finally" is also chained at the end of a try-except chain, and contains the code to be excecuted after the code in any of the preceding blocks i.e. whether or not an exception has been caught.

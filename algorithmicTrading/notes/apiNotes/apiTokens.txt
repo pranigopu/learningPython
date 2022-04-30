@@ -1,0 +1,11 @@
+API tokens
+---*---*---
+A token can mean one of the following...
+___
+1.
+A unique identifier of an application requesting access to a service. The service would generate an API token for the application to use when requesting the service. The service provider can then match the token provided by the application to the one stored with the service provider in order to authenticate.
+___
+2.
+A replacement for sending some username and password combination over HTTP, which is not secure. While someone could still take and use the API token instead, it is more secure.
+---*---*---
+API calls require the caller (client) to pass its token, so that the client's identity can be authenticated, and the response can be directed to the client (if the client is recognised).

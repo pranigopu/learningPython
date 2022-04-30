@@ -1,0 +1,5 @@
+ARGUMENT PASSING
+---*---*---
+For any function, arguments can be passed using keywords (i.e. the names of the formal parameters given in the function definition) or without keywords.
+___
+When passing non-keyword arguments, you must adhere to the order given in the function definition.. When passing keyword arguments, however, you can give the arguments in any order, as long as you specify the correct keyword for the argument.

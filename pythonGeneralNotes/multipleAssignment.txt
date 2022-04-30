@@ -1,0 +1,29 @@
+Multiple assignment in Python
+---*---*---
+GENERAL IDEA
+___
+Multiple variables can be assigned in a single statement, even without the use of packing and unpacking of lists and tuples.
+___
+Take variables a, b and c, to be assigned to values 1, 2 and 3. Then, we can do
+a, b, c = 1, 2, 3
+___
+As expected, the order of the variables in the left-hand side must match the order of the indended values in the right-hand side.
+---*---*---
+PRECEDENCE
+___
+No variable assignment takes precedence in multiple assignment. Consider the following situation...
+i = 2
+j = 3
+i, j = 0, i + j
+------------
+Result:
+i = 0
+j = 5
+
+Hence we see that every assignment in multiple assignment uses the previous values of any variables, and updates all variables only after the statement. This is equivalent to the following set of assigments...
+i = 2
+j = 3
+tmp_i = i
+tmp_j = j
+i = 0
+j = tmp_j + tmp_i

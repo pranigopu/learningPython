@@ -1,0 +1,9 @@
+BUNCH DATA TYPE
+---*---*---
+Bunch is a subclass of the Dict class (dictionary structure). Hence, it supports all the methods Dict does. In addition, it allows you to use the keys as attributes. For example, if you have
+
+from sklearn.utils import Bunch
+myBunch = Bunch(a = 1, b = 2)
+# Note that a and b are not variables in this constructor. They are fields or keys.
+___
+myBunch['a'] and myBunch.a will both give 1.
